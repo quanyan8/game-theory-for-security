@@ -140,6 +140,10 @@ pre{background:var(--code);padding:16px 18px;border-radius:6px;overflow-x:auto;f
 .badge.sample{color:var(--gold-d);background:color-mix(in srgb,var(--gold) 16%,transparent);text-decoration:none}
 .badge.sample:hover{text-decoration:underline}
 
+/* solutions manual */
+.solbox{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;align-items:center}
+.solbox .prose p:last-child{margin-bottom:0}
+
 footer{padding:32px 0 48px;font:14px var(--sans);color:var(--muted)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
@@ -151,6 +155,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   .cb{grid-template-columns:minmax(0,1fr);padding-left:22px}
   .two{grid-template-columns:minmax(0,1fr);gap:24px}
   .samplebox{grid-template-columns:minmax(0,1fr);gap:24px}
+  .solbox{grid-template-columns:minmax(0,1fr);gap:28px}
+  .solbox .cover{max-width:200px}
   nav ul{display:none}
 }
 @media (max-width:480px){
@@ -174,6 +180,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <li><a href="#sample">Sample</a></li>
     <li><a href="#contents">Contents</a></li>
     <li><a href="#code">Code</a></li>
+    <li><a href="#solutions">Solutions</a></li>
     <li><a href="#errata">Errata</a></li>
     <li><a href="#cite">Cite</a></li>
     <li><a href="#authors">Authors</a></li>
@@ -283,6 +290,24 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         running a script again is often the quickest way to see how an
         equilibrium depends on its assumptions.</p>
       </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="solutions"><div class="wrap">
+  <h2>Solutions manual</h2>
+  <p class="lede">Worked solutions to the exercises, for instructors.</p>
+  <div class="solbox">
+    <img class="cover" src="assets/solutions-manual-cover.jpg" width="1103" height="1426" loading="lazy"
+         alt="Solutions Manual cover: the book's cover with its colours swapped, so the network splits a red field from a blue one along the gold seam.">
+    <div class="prose">
+      <p>The solutions manual works through all 167 exercises of the sixteen chapters
+      and Appendices A to E. Each exercise is reprinted from the book and followed by
+      the reasoning a student is expected to give, with the answer to each part set
+      off for quick checking.</p>
+      <p>Python scripts accompanying the manual recompute its numerical answers and
+      the data of its figures.</p>
+      <p>The manual is intended for instructors and is not distributed with the book.</p>
     </div>
   </div>
 </div></section>
